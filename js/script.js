@@ -1,21 +1,17 @@
-const tittle = document.querySelector('.titulo')
-const anim = document.querySelectorAll('.animais img')
-const imag = document.querySelectorAll('img')
-const imag2 = document.querySelectorAll('img[src^="img/imagem"]')
-const itensMenu = document.querySelectorAll('.menu a');
+import initScroll from './modules/scroll-suave.js'
+initScroll();
 
-itensMenu.forEach((item) => {
-  item.classList.add ('ativo')
-})
+import scrollAnimation from './modules/anima-scroll.js'
+scrollAnimation();
 
-itensMenu.forEach((item) => {
-  item.classList.remove ('ativo')
-})
+import initAccordion from './modules/anit-accordion.js'
+initAccordion();
 
-itensMenu[0].classList.add ('ativo')
+import initTabNav from './modules/init-tabnav.js'
+initTabNav();
 
-const img = document.querySelectorAll ('img')
-img.forEach((img) => {
-  const possui =img.hasAttribute('alt')
-})
+import initModal from './modules/modal.js'
+initModal();
 
+import initTooltip from './modules/tooltip.js'
+initTooltip();

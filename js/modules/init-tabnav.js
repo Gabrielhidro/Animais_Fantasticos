@@ -1,4 +1,4 @@
-function initTabNav (){
+export default function initTabNav(){
   const tabMenu = document.querySelectorAll('.js-tabmenu li')
 const tabContent = document.querySelectorAll('.js-tabcontent section')
 
@@ -17,8 +17,4 @@ if(tabMenu.length && tabContent.length){
       activetab(index);
     });
   });
-}
-}
-initTabNav();
-
-
+}}
