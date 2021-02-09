@@ -1,17 +1,17 @@
-import initScroll from './modules/scroll-suave.js'
-initScroll();
+import initScrollSuave from './modules/scroll-suave.js';
+import initAnimacaoScroll from './modules/scroll-animacao.js';
+import initAccordion from './modules/accordion.js';
+import initTabNav from './modules/tabnav.js';
+import initModal from './modules/modal.js';
+import initTooltip from './modules/tooltip.js';
+import initDropdownMenu from './modules/dropdown-menu.js';
+import initMenuMobile from './modules/menu-mobile.js';
 
-import scrollAnimation from './modules/anima-scroll.js'
-scrollAnimation();
-
-import initAccordion from './modules/anit-accordion.js'
+initScrollSuave();
+initAnimacaoScroll();
 initAccordion();
-
-import initTabNav from './modules/init-tabnav.js'
 initTabNav();
-
-import initModal from './modules/modal.js'
 initModal();
-
-import initTooltip from './modules/tooltip.js'
 initTooltip();
+initDropdownMenu();
+initMenuMobile();
